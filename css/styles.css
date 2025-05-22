@@ -12,12 +12,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 70px;
   background: #fffaf3;
   z-index: 1000;
   width: 100%;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 280px;
   position: fixed;
   outline: 2px solid #eeeae4;
 }
@@ -71,29 +71,37 @@ body {
   height: 90vh;
   width: 100%;
   padding: 0 50px;
-  max-width: 1300px;
+  max-width: 1800px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-image: url("https://6faca8fa.delivery.rocketcdn.me/wp-content/uploads/2024/02/male-runway-modeling-1024x576.webp");
+  background-size: cover;
 }
 
 .hero__content {
-  color: #050301;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .hero__content h1 {
   font-size: 4rem;
+  cursor: default;
 }
 
 .hero__content p {
   margin-top: 1rem;
   font-size: 1.2rem;
+  cursor: default;
 }
 
 .hero__btn {
   font-size: 1rem;
-  background: #050301;
+  background: #fffaf3;
   padding: 14px 32px;
   border: none;
   border-radius: 7px;
-  color: #fffaf3;
+  color: #050301;
   margin-top: 2rem;
   cursor: pointer;
   outline: none;
@@ -112,4 +120,31 @@ body {
 #hero1-image {
   width: 100%;
   height: 100%;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  background-color: #050301;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fffaf3;
+}
+
+.why-choose-us h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.why-choose-us .intro-text {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 }
