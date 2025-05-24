@@ -18,6 +18,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 280px;
+  margin-bottom: 70px;
   position: fixed;
   outline: 2px solid #eeeae4;
 }
@@ -38,11 +39,11 @@
 }
 
 .navbar__item {
-  height: 80px;
+  height: 50px;
 }
 
 .navbar__links {
-  color: #050301;
+  color: #585048;
   text-decoration: none;
   height: 100%;
   padding: 0 1rem;
@@ -54,8 +55,9 @@
 }
 
 .navbar__item:hover {
-  transform: translateY(-1px);
+  /* transform: translateY(-1px); */
   text-shadow: 2px 2px #dcdcdc;
+  border-bottom: 2px solid #4b443e;
 }
 
 body {
@@ -67,7 +69,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin: 0 auto;
+  margin: 72px auto 0;
   height: 90vh;
   width: 100%;
   padding: 0 50px;
@@ -100,17 +102,18 @@ body {
   background: #fffaf3;
   padding: 14px 32px;
   border: none;
-  border-radius: 7px;
+  border-radius: 9px;
   color: #050301;
   margin-top: 2rem;
   cursor: pointer;
-  outline: none;
+  outline: 2px solid #d5d1cb;
   transition: all 0.18s ease;
 }
 
 .hero__btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline-color: #c7c3be;
 }
 
 .hero__image {
@@ -123,6 +126,13 @@ body {
 }
 
 /* Why Choose Us */
+.why-choose-us .container {
+  height: 70vh;
+  width: 100%;
+  padding: 0 50px;
+  max-width: 1800px;
+}
+
 .why-choose-us {
   background-color: #050301;
   padding: 100px 20px;
