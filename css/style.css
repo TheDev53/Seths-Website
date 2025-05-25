@@ -1,3 +1,4 @@
+/* Base Reset and Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,6 +35,7 @@ body {
   border-bottom: 1px solid #eeeae4;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .navbar__scrolled__secondary {
   transform: translateY(-80px);
 }
@@ -55,7 +57,6 @@ body {
 }
 
 .navbar__end {
-  /* background-color: #016257; */
   height: 70px;
   justify-content: end;
   align-items: center;
@@ -69,8 +70,6 @@ body {
   border: none;
   text-decoration: none;
   border-radius: 10px;
-  margin-top: 0;
-  /* margin-left: 500px; */
   color: #050301;
   cursor: pointer;
   height: 40px;
@@ -81,9 +80,9 @@ body {
 .navbar__btn:hover {
   background: #d3d3d340;
 }
+
 .navbar__btn::after {
   content: "";
-  /* border-bottom: 1px solid #bdbdbd40; */
   border-radius: 10px;
   height: 98%;
   width: 98%;
@@ -95,6 +94,7 @@ body {
   transition: all 0.18s ease;
   opacity: 0;
 }
+
 .navbar__btn:hover::after {
   opacity: 1;
 }
@@ -116,7 +116,6 @@ body {
 }
 
 .navbar__item:hover {
-  /* transform: translateY(-1px); */
   text-shadow: 2px 2px #dcdcdc;
   border-bottom: 2px solid #4b443e;
 }
@@ -127,14 +126,10 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   margin: 72px auto 0;
-  height: 90vh;
+  min-height: 80vh;
   width: 100%;
   padding: 0 80px;
   max-width: 1900px;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  background-image: url("https://6faca8fa.delivery.rocketcdn.me/wp-content/uploads/2024/02/male-runway-modeling-1024x576.webp");
-  background-size: contain;
   background: linear-gradient(to right, #f6f3ef 0%, #f6f3ef 100%);
   outline: 1px solid #e7e3dd;
   border-radius: 19px;
@@ -142,12 +137,10 @@ body {
 
 .hero__content {
   color: #050301;
-  /* background: rgba(0, 0, 0, 0.1); */
   border-radius: 4px;
   padding: 20px;
-  height: 60%;
-  flex-wrap: wrap;
   width: 80%;
+  min-height: 40vh;
 }
 
 .hero__content h1 {
@@ -177,6 +170,7 @@ body {
   align-items: center;
   position: relative;
 }
+
 .hero__btn::after {
   content: "";
   border: 1px solid #01685cae;
@@ -191,9 +185,11 @@ body {
   transition: all 0.18s ease;
   opacity: 0;
 }
+
 .hero__btn:hover {
   transform: translateY(-2px);
 }
+
 .hero__btn:hover::after {
   opacity: 1;
 }
@@ -210,7 +206,6 @@ body {
 /* Why Choose Us */
 .why-choose-us .container {
   display: flex;
-  max-height: 2000px;
   width: 100%;
   justify-content: center;
   background-color: #050301;
@@ -225,7 +220,6 @@ body {
 
 .why-choose-us {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -248,7 +242,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   font-size: 3rem;
-  height: 100%;
   max-width: 1800px;
   background-color: #017c6e;
   flex-direction: column;
@@ -256,19 +249,40 @@ body {
   margin-top: 50px;
 }
 
-.feature-item {
-}
-
-/* media */
-@media (max-width: 600px) {
-  .hero__container {
-    grid-template-columns: 1fr;
-    padding: 20px;
-    height: 50vh;
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .hero__content h1 {
+    font-size: 3em;
   }
 
-  .hero__content h1 {
-    font-size: 2.5em;
+  .hero__content p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero__content {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .why-choose-us .container {
+    padding: 60px 10px;
+  }
+
+  .features-grid {
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
   }
 
   .why-choose-us h2 {
