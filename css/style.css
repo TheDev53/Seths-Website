@@ -32,11 +32,13 @@ body {
 }
 
 #navbar-logo {
-  color: #050301;
+  color: #015b51;
   cursor: pointer;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
-  font-weight: 700;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .navbar__scrolled {
@@ -88,13 +90,14 @@ body {
 .navbar__btn {
   font-size: 1rem;
   background: #ffffff;
-  padding: 7px 22px;
+  padding: 9px 22px;
   border: none;
+  font-weight: 650;
   text-decoration: none;
   border-radius: 10px;
-  color: #050301;
+  color: #030201;
   cursor: pointer;
-  height: 40px;
+  height: 45px;
   transition: all 0.18s ease;
   position: relative;
 }
@@ -230,11 +233,11 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: #141312;
+  background-color: #dfd2bf;
   padding: 100px 20px;
   text-align: center;
-  color: #fffaf3;
-  outline: 1px solid #000000;
+  color: #422c18;
+  outline: 1px solid #d4c8b6;
   flex-direction: column;
   border-radius: 19px;
   max-width: 1900px;
@@ -256,7 +259,7 @@ body {
   font-size: 2rem;
   margin-bottom: 50px;
   max-width: 1000px;
-  height: 80px;
+  height: 120px;
   margin: 0 auto;
 }
 
