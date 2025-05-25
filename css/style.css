@@ -7,20 +7,33 @@
   overflow-x: hidden;
 }
 
+body {
+  background-color: rgb(255, 255, 255);
+}
+
 /* NAVBAR */
 .navbar__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  background: #fffaf3;
+  background: #ffffff;
   z-index: 1000;
   width: 100%;
   margin: 0 auto;
-  padding: 0 280px;
+  padding: 0 25px;
   margin-bottom: 70px;
+  border-bottom: 1px solid #eeeae400;
   position: fixed;
-  outline: 2px solid #eeeae4;
+  transition: all ease, border-bottom 0.3s, box-shadow 0.3s, transform 0.5s;
+}
+
+.navbar__scrolled {
+  border-bottom: 1px solid #eeeae4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar__scrolled__secondary {
+  transform: translateY(-80px);
 }
 
 #navbar-logo {
@@ -38,12 +51,57 @@
   margin: 0 auto;
 }
 
+.navbar__end {
+  /* background-color: #016257; */
+  height: 70px;
+  justify-content: end;
+  align-items: center;
+  display: grid;
+}
+
+.navbar__btn {
+  font-size: 1rem;
+  background: #ffffff;
+  padding: 8px 22px;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 0;
+  /* margin-left: 500px; */
+  color: #050301;
+  cursor: pointer;
+  height: 40px;
+  transition: all 0.18s ease;
+  position: relative;
+}
+
+.navbar__btn:hover {
+  background: #d3d3d340;
+}
+.navbar__btn::after {
+  content: "";
+  /* border-bottom: 1px solid #bdbdbd40; */
+  border-radius: 10px;
+  height: 98%;
+  width: 98%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.02);
+  z-index: 10000000000000000000;
+  transition: all 0.18s ease;
+  opacity: 0;
+}
+.navbar__btn:hover::after {
+  opacity: 1;
+}
+
 .navbar__item {
   height: 50px;
 }
 
 .navbar__links {
-  color: #585048;
+  color: #3d3d3d;
   text-decoration: none;
   height: 100%;
   padding: 0 1rem;
@@ -60,10 +118,6 @@
   border-bottom: 2px solid #4b443e;
 }
 
-body {
-  background-color: #fffaf3;
-}
-
 /* HERO */
 .hero__container {
   display: grid;
@@ -72,18 +126,23 @@ body {
   margin: 72px auto 0;
   height: 90vh;
   width: 100%;
-  padding: 0 50px;
-  max-width: 1800px;
+  padding: 0 80px;
+  max-width: 1900px;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
   background-image: url("https://6faca8fa.delivery.rocketcdn.me/wp-content/uploads/2024/02/male-runway-modeling-1024x576.webp");
-  background-size: cover;
+  background-size: contain;
+  background: linear-gradient(to right, #f6f3ef 0%, #f6f3ef 100%);
+  outline: 1px solid #e7e3dd;
+  border-radius: 19px;
 }
 
 .hero__content {
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.1);
+  color: #050301;
+  /* background: rgba(0, 0, 0, 0.1); */
+  border-radius: 4px;
   padding: 20px;
+  height: 50vh;
 }
 
 .hero__content h1 {
@@ -99,21 +158,39 @@ body {
 
 .hero__btn {
   font-size: 1rem;
-  background: #fffaf3;
+  background: #017c6e;
   padding: 14px 32px;
   border: none;
-  border-radius: 9px;
-  color: #050301;
-  margin-top: 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  top: 2rem;
   cursor: pointer;
-  outline: 2px solid #d5d1cb;
+  border-bottom: 1px solid #016b5f;
   transition: all 0.18s ease;
+  height: 60px;
+  align-items: center;
+  position: relative;
 }
-
+.hero__btn::after {
+  content: "";
+  border: 1px solid #01685cae;
+  border-radius: 10px;
+  height: 98%;
+  width: 99%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10000000000000000000;
+  transition: all 0.18s ease;
+  opacity: 0;
+}
 .hero__btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  outline-color: #c7c3be;
+}
+.hero__btn:hover::after {
+  opacity: 1;
 }
 
 .hero__image {
