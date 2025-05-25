@@ -32,3 +32,9 @@ window.addEventListener("scroll", () => {
 
   prevScrollY = window.scrollY;
 });
+
+// hamburger toggle
+function toggleNavbar() {
+  const menu = document.querySelector(".navbar__menu");
+  menu.classList.toggle("active");
+}

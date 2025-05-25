@@ -31,6 +31,14 @@ body {
   transition: all ease, border-bottom 0.3s, box-shadow 0.3s, transform 0.5s;
 }
 
+#navbar-logo {
+  color: #050301;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 .navbar__scrolled {
   border-bottom: 1px solid #eeeae4;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -40,12 +48,19 @@ body {
   transform: translateY(-80px);
 }
 
-#navbar-logo {
-  color: #050301;
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
   cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 700;
+  padding: 10px;
+}
+
+.navbar__toggle span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  margin: 4px 0;
+  transition: 0.4s;
 }
 
 .navbar__menu {
@@ -54,6 +69,12 @@ body {
   list-style: none;
   margin: 0 auto;
   flex-wrap: wrap;
+}
+
+.navbar__menu.active {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .navbar__end {
@@ -126,7 +147,7 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   margin: 72px auto 0;
-  min-height: 80vh;
+  min-height: 70vh;
   width: 100%;
   padding: 0 80px;
   max-width: 1900px;
@@ -140,7 +161,7 @@ body {
   border-radius: 4px;
   padding: 20px;
   width: 80%;
-  min-height: 40vh;
+  min-height: 50vh;
 }
 
 .hero__content h1 {
@@ -261,10 +282,41 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* .navbar__container {
+    justify-content: right;
+  } */
+
+  .navbar__btn {
+    justify-self: right;
+    margin-left: 40vh;
+    /* padding-top: 10px; */
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .navbar__end {
+    margin-right: 2px;
+  }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar__menu.active {
+    display: flex;
+  }
+
   .hero__container {
     grid-template-columns: 1fr;
     padding: 40px 20px;
     text-align: center;
+    height: 82vh;
   }
 
   .hero__content {
@@ -281,8 +333,15 @@ body {
     font-size: 1.5rem;
   }
 
-  .navbar__menu {
-    flex-direction: column;
+  .navbar__item {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar__links {
+    display: block;
+    width: 100%;
   }
 
   .why-choose-us h2 {
