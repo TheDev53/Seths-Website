@@ -5,6 +5,7 @@
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   overflow-x: hidden;
+  font-size: 1vw;
 }
 
 body {
@@ -16,9 +17,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: auto;
   background: #ffffff;
   z-index: 1000;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0 auto;
   padding: 0 25px;
@@ -49,6 +51,7 @@ body {
   justify-content: center;
   list-style: none;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .navbar__end {
@@ -62,7 +65,7 @@ body {
 .navbar__btn {
   font-size: 1rem;
   background: #ffffff;
-  padding: 8px 22px;
+  padding: 7px 22px;
   border: none;
   text-decoration: none;
   border-radius: 10px;
@@ -142,22 +145,24 @@ body {
   /* background: rgba(0, 0, 0, 0.1); */
   border-radius: 4px;
   padding: 20px;
-  height: 50vh;
+  height: 60%;
+  flex-wrap: wrap;
+  width: 80%;
 }
 
 .hero__content h1 {
-  font-size: 4rem;
+  font-size: 4em;
   cursor: default;
 }
 
 .hero__content p {
   margin-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   cursor: default;
 }
 
 .hero__btn {
-  font-size: 1rem;
+  font-size: 1em;
   background: #017c6e;
   padding: 14px 32px;
   border: none;
@@ -204,28 +209,37 @@ body {
 
 /* Why Choose Us */
 .why-choose-us .container {
-  height: 70vh;
+  display: flex;
+  max-height: 2000px;
   width: 100%;
-  padding: 0 50px;
-  max-width: 1800px;
-}
-
-.why-choose-us {
+  justify-content: center;
   background-color: #050301;
   padding: 100px 20px;
   text-align: center;
   color: #fffaf3;
+  outline: 1px solid #000000;
+  flex-direction: column;
+  border-radius: 19px;
+  max-width: 1900px;
+}
+
+.why-choose-us {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .why-choose-us h2 {
   font-size: 3rem;
   margin-bottom: 20px;
+  height: 90px;
 }
 
 .why-choose-us .intro-text {
   font-size: 2rem;
   margin-bottom: 50px;
   max-width: 1000px;
+  height: 80px;
   margin: 0 auto;
 }
 
@@ -233,5 +247,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  font-size: 3rem;
+  height: 100%;
+  max-width: 1800px;
+  background-color: #017c6e;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.feature-item {
 }
