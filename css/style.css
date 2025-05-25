@@ -53,13 +53,14 @@ body {
   flex-direction: column;
   cursor: pointer;
   padding: 10px;
+  margin-top: 0.5vh;
 }
 
 .navbar__toggle span {
   height: 3px;
-  width: 25px;
+  width: 28px;
   background: #333;
-  margin: 4px 0;
+  margin: 3.5px 0;
   transition: 0.4s;
 }
 
@@ -147,7 +148,7 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   margin: 72px auto 0;
-  min-height: 70vh;
+  min-height: 92.32vh;
   width: 100%;
   padding: 0 80px;
   max-width: 1900px;
@@ -229,7 +230,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: #050301;
+  background-color: #141312;
   padding: 100px 20px;
   text-align: center;
   color: #fffaf3;
@@ -237,6 +238,7 @@ body {
   flex-direction: column;
   border-radius: 19px;
   max-width: 1900px;
+  min-height: 100vh;
 }
 
 .why-choose-us {
@@ -264,10 +266,9 @@ body {
   justify-content: center;
   font-size: 3rem;
   max-width: 1800px;
-  background-color: #017c6e;
+  /* background-color: #017c6e; */
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 50px;
 }
 
 /* Responsive Styles */
@@ -279,17 +280,42 @@ body {
   .hero__content p {
     font-size: 1em;
   }
-}
-
-@media (max-width: 768px) {
-  /* .navbar__container {
-    justify-content: right;
-  } */
 
   .navbar__btn {
     justify-self: right;
-    margin-left: 6vh;
+    margin-left: 70vh;
     /* padding-top: 10px; */
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .navbar__end {
+    margin-right: 2px;
+  }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #feature-list {
+    margin-top: 2vh;
+  }
+
+  #navbar-logo {
+    font-size: 1.6rem;
+  }
+  .navbar__btn {
+    justify-self: right;
+    margin-left: 2vh;
+    padding-top: 1.3vh;
     font-size: 1.2rem;
     font-weight: 600;
   }
@@ -316,7 +342,7 @@ body {
     grid-template-columns: 1fr;
     padding: 40px 20px;
     text-align: center;
-    height: 82vh;
+    height: 70vh;
   }
 
   .hero__content {
@@ -326,6 +352,7 @@ body {
 
   .why-choose-us .container {
     padding: 60px 10px;
+    height: 70vh;
   }
 
   .features-grid {
@@ -346,9 +373,18 @@ body {
 
   .why-choose-us h2 {
     font-size: 2rem;
+    margin-bottom: 0vh;
+    max-height: 6.5vh;
   }
 
   .why-choose-us .intro-text {
     font-size: 1.2rem;
+    max-height: 9vh;
+    margin-bottom: 0vh;
+    padding-bottom: 1vh;
+  }
+
+  .features-grid {
+    margin-top: 0vh;
   }
 }
