@@ -5,7 +5,7 @@
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   overflow-x: hidden;
-  font-size: 1vw;
+  font-size: clamp(14px, 1.2vw, 18px);
 }
 
 body {
@@ -257,4 +257,25 @@ body {
 }
 
 .feature-item {
+}
+
+/* media */
+@media (max-width: 768px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    height: 50vh;
+  }
+
+  .hero__content h1 {
+    font-size: 2.5em;
+  }
+
+  .why-choose-us h2 {
+    font-size: 2rem;
+  }
+
+  .why-choose-us .intro-text {
+    font-size: 1.2rem;
+  }
 }
