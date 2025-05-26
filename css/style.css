@@ -38,7 +38,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 625;
 }
 
 .navbar__scrolled {
@@ -160,7 +160,9 @@ body {
   background-size: cover;
   background-position: right;
   outline: 1px solid #e7e3dd;
-  border-radius: 19px;
+  border-radius: 0px;
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
 }
 
 .hero__content {
@@ -243,7 +245,7 @@ body {
   color: #e7e3dd;
   outline: 1px solid #d4c8b6;
   flex-direction: column;
-  border-radius: 19px;
+  border-radius: 0px;
   max-width: 1900px;
   min-height: 100vh;
   background-image: url(/images/ychooseus.jpg);
@@ -320,13 +322,14 @@ body {
   }
 
   #navbar-logo {
-    font-size: 1.6rem;
+    font-size: 1.5em;
   }
   .navbar__btn {
-    justify-self: right;
-    margin-left: 1vh;
+    justify-self: center;
+    margin-left: 0.2vh;
+    margin-right: 0;
     padding-top: 1.3vh;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
   }
 
@@ -354,6 +357,8 @@ body {
     text-align: center;
     height: 70vh;
     border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 
   .hero__content {
