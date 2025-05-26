@@ -3,6 +3,7 @@ const triggerDistPx = 1;
 
 let prevScrollY = window.scrollY;
 
+//scroll handler
 window.addEventListener("scroll", () => {
   if (window.scrollY > triggerDistPx) {
     headerEl.classList.add("navbar__scrolled");
