@@ -147,6 +147,7 @@ form div.incorrect input {
   .wrapper {
     width: min(600px, 100%);
     border-radius: 0;
+    /* padding-top: 0px; */
   }
   #logo {
     display: flex;
@@ -160,14 +161,28 @@ form div.incorrect input {
   }
 }
 @media (max-width: 650px) {
+  h1 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+  }
+  .wrapper {
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
   #logo {
     display: flex;
     position: absolute;
     left: 5%;
-    right: 50%;
+    right: 40%;
     bottom: 93%;
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 625;
     text-decoration: none;
+  }
+  .wrapper p.callback {
+    display: flex;
+    position: absolute;
+    top: 82%;
+    bottom: 1%;
   }
 }
