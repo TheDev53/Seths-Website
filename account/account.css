@@ -182,7 +182,7 @@ form div.incorrect input {
   .wrapper p.callback {
     display: flex;
     position: absolute;
-    top: 82%;
+    top: 85%;
     bottom: 1%;
   }
 }
