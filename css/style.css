@@ -324,7 +324,7 @@ body {
   }
   .navbar__btn {
     justify-self: right;
-    margin-left: 2vh;
+    margin-left: 1.5vh;
     padding-top: 1.3vh;
     font-size: 1.2rem;
     font-weight: 600;
@@ -353,6 +353,7 @@ body {
     padding: 40px 20px;
     text-align: center;
     height: 70vh;
+    border-radius: 0;
   }
 
   .hero__content {
@@ -361,6 +362,7 @@ body {
   }
 
   .why-choose-us .container {
+    border-radius: 0;
     padding: 60px 10px;
     height: 70vh;
   }
