@@ -156,12 +156,16 @@ body {
   padding: 0 80px;
   max-width: 1900px;
   background: linear-gradient(to right, #f6f3ef 0%, #f6f3ef 100%);
+  background-image: url(/images/hero.jpg);
+  background-size: cover;
+  background-position: right;
   outline: 1px solid #e7e3dd;
   border-radius: 19px;
 }
 
 .hero__content {
-  color: #050301;
+  color: #e7e3dd;
+  background-color: #03020181;
   border-radius: 4px;
   padding: 20px;
   width: 80%;
@@ -211,12 +215,12 @@ body {
   opacity: 0;
 }
 
-.hero__btn:hover {
-  transform: translateY(-2px);
-}
-
 .hero__btn:hover::after {
   opacity: 1;
+}
+
+.hero__btn:hover {
+  transform: translateY(-9vh);
 }
 
 .hero__image {
@@ -236,12 +240,15 @@ body {
   background-color: #dfd2bf;
   padding: 100px 20px;
   text-align: center;
-  color: #422c18;
+  color: #e7e3dd;
   outline: 1px solid #d4c8b6;
   flex-direction: column;
   border-radius: 19px;
   max-width: 1900px;
   min-height: 100vh;
+  background-image: url(/images/ychooseus.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .why-choose-us {
